@@ -21,6 +21,6 @@ def about_me(request):
 
     return render(
         request,
-        "templates/about/about.html",
+        "about/about.html",
         {"about": about},
    )
