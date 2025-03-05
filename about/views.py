@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import AboutMe
+from .models import About
 # Create your views here.
 
 def about_me(request):
@@ -17,7 +17,7 @@ def about_me(request):
     :template:`about/about_me.html`
     """
 
-    about = AboutMe.objects.all().order_by("updated_on").first()
+    about = About.objects.all().order_by("updated_on").first()
 
     return render(
         request,
