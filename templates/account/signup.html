@@ -5,10 +5,10 @@
 {% block head_title %}{% trans "Signup" %}{% endblock head_title %}
 
 {% block content %}
-<div class="container mt-2">
-    <h1 class="mb-4">{% trans "Sign Up" %}</h1>
+<div class="container mt-3 ms-20">
+    <h1 class="mb-2 display-9">{% trans "Sign Up" %}</h1>
 
-    <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <p>{% blocktrans %}Welcome to Codestar Blog! Already have an account? Then please <a href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}</p>
 
     <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
